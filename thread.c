@@ -2,14 +2,13 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-
- int vec[10];
- int vec2[10];
- int tam = 0;
- float divi;
-void *function(void *param)
+int tam = 0;
+int vec[];
+int vec2[];
+float divi;
+void *function()
 {
-    char url[]="teste.txt";
+    char url[]="Entrada.txt";
     char ch;
     int j = 0;
     int i = 0;
@@ -24,7 +23,7 @@ void *function(void *param)
 
 }
 
-void *function2(void *param)
+void *function2()
 {
     int i;
     int j;
@@ -51,7 +50,7 @@ void *function2(void *param)
 
 }
 
-void *function3(void *param)
+void *function3()
 {
     int i;
     int soma = 0;
